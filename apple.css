@@ -1,0 +1,311 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.navBar {
+    height: 44px;
+    width: 98.699vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #161617cc;
+    z-index: 10;
+    backdrop-filter: blur(6px)
+}
+.navElements {
+    width: 1024px;
+    height: 44px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 14px;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    color: rgb(214, 214, 214);
+}
+.navBarElements {
+    padding: 0px 8px;
+    margin: none;
+    cursor: pointer;
+}
+.Text {
+    font-size: 0.77rem;
+    margin: none;
+}
+.OtherIcon {
+    filter: invert(89%) sepia(75%) saturate(0%) hue-rotate(109deg) brightness(93%) contrast(80%);
+}
+
+.HeroPageImages {
+    width: 98.699vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.HeroPageGroupImages {
+    display: flex;
+    width: 48vw;
+    height: auto;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+}
+
+.HeroPageGroup {
+    margin-left: 12.5px;
+    width: 97vw;
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr);
+    gap: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#Menu-icon {
+    display: none;
+}
+
+.Footer {
+    color: #0000008f;
+    background-color: #f5f5f7;
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Footer p {
+    padding: 0px 150px
+}
+
+.HeroPageText {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    top: 5%;
+}
+
+.mainText i {
+    font-size: 2.8rem;
+}
+
+.HeroPageText p{
+    line-height: 2px;
+}
+
+.mainText {
+    font-size: 3.3rem;
+    font-weight: 1000;
+}
+
+.middleText {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.linkText {
+    display: flex;
+    width: 300px;
+    margin: 0px auto;
+    justify-content: space-evenly;
+    color: #2997ff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-top: 7px;
+}
+
+.linkText a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.placeItBottom {
+    top: unset;
+    bottom: 5%;
+}
+
+.withAppleLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+}
+
+.greyText {
+    color: rgb(107, 107, 107);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+.mainTextGrp {
+    font-size: 2.3rem;
+    font-weight: 1000;
+}
+
+.mainTextGrp i {
+    font-size: 2.1rem;
+}
+
+.withAppleLogoGrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+.middleTextGrp {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.linkTextGrp {
+    display: flex;
+    width: 200px;
+    margin: 0px auto;
+    justify-content: space-evenly;
+    color: #2997ff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-top: 7px;
+}
+
+.linkTextGrp a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.HeroPageTextGrp {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    top: 5%;
+}
+
+.makeItBlack {
+    color: #000000;
+}
+
+.makeItOtherBlue{
+    color: #0066CC;
+}
+
+.greyTextGrp {
+    color: rgb(107, 107, 107);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+
+.nonGroup {
+    display: none;
+}
+
+.placeItBottom {
+    top: unset;
+    bottom: 5%;
+}
+
+.HeroPageTextGrp p{
+    line-height: 2px;
+}
+
+
+@media screen and (max-width: 1037.5px) {
+    .navElements {
+        width: 98.699vw;
+        margin: unset;
+    }
+}
+
+@media screen and (max-width: 832px) {
+    .Text {
+        display: none;
+    }
+    .navElements {
+        width: 99.4%;
+        height: 48px;
+        margin: unset;
+        justify-content: space-between;
+        padding: unset;
+    }
+    .navBar {
+        height: 48px;
+    }
+    #Apple-icon {
+        width: 100%;
+        padding: unset;
+    }
+    #Apple-icon i{
+        padding: 0px 16px;
+        font-size: 1.3rem;
+    }
+    #Menu-icon {
+        display: block;
+        padding: 0px 15px;
+    }
+    #Search-icon {
+        padding: 0px 15.825px;
+        height: 48px;
+    }
+    #Shopping-bag {
+        padding: 0px 16.365px;
+        height: 48px;
+    }
+    .Footer p {
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (max-height: 465px) {
+    .navBar {
+        width: 100vw;
+    }
+    .HeroPageImages {
+        width: 100vw;
+    }
+    .Footer p {
+        padding: 0px 50px;
+    }
+    .initialImageText {
+        display: none;
+    }
+    .nonGroup {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    .HeroPageGroupImages {
+        height: 490px;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    .HeroPageGroup {
+        display: unset;
+        grid-template-columns: unset;
+        gap: unset;
+        margin-left: unset;
+    }
+    .HeroPageGroupImages {
+        height: 500px;
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    .initialImageText {
+        display: none;
+    }
+    .nonGroup {
+        display: block;
+    }
+    .Footer p {
+        padding: 0px 50px;
+    }
+}
